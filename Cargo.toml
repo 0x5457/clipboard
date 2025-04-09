@@ -1,0 +1,15 @@
+[package]
+name = "clipboard"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+rust-embed = "8.5"
+# fa7dddd6b56b44711c2cf4100131b735435acbfe
+gpui = { path = "../zed/crates/gpui" }
+unicode-segmentation = "1.1"
+clipboard-master = "3.1"
+arboard = "3.4"
+smol = "2.0"
+fuzzy-matcher = "0.3"
