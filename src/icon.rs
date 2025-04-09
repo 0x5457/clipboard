@@ -41,7 +41,7 @@ impl RenderOnce for Icon {
         self.base
             .text_color(text_color)
             .when_some(self.size, |this, size| match size {
-                style::Size::Size(px) => this.size(px),
+                style::Size::Custom(px) => this.size(px),
                 style::Size::XSmall => this.size_3(),
                 style::Size::Small => this.size_3p5(),
                 style::Size::Medium => this.size_4(),

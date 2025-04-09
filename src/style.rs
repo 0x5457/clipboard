@@ -3,7 +3,7 @@ use gpui::*;
 #[allow(dead_code)]
 #[derive(Clone, Default, Copy, PartialEq, Eq, Debug)]
 pub enum Size {
-    Size(Pixels),
+    Custom(Pixels),
     XSmall,
     Small,
     #[default]
@@ -13,6 +13,6 @@ pub enum Size {
 
 impl From<Pixels> for Size {
     fn from(size: Pixels) -> Self {
-        Size::Size(size)
+        Size::Custom(size)
     }
 }
