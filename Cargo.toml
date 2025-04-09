@@ -6,8 +6,7 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0"
 rust-embed = "8.5"
-# fa7dddd6b56b44711c2cf4100131b735435acbfe
-gpui = { path = "../zed/crates/gpui" }
+gpui = { git = "https://github.com/zed-industries/zed", rev="fa7dddd6b56b44711c2cf4100131b735435acbfe"}
 unicode-segmentation = "1.1"
 clipboard-master = "3.1"
 arboard = "3.4"
